@@ -974,6 +974,8 @@ static NSDictionary* customCertificatesForHost;
     _onContentProcessDidTerminate(event);
   }
 
+  [Rollbar log:RollbarDebug message:@"[RNCWebview] webViewWebContentProcessDidTerminate calling reload"];
+
   [webView reload];
 }
 
