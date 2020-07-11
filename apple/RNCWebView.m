@@ -973,6 +973,8 @@ static NSDictionary* customCertificatesForHost;
     NSMutableDictionary<NSString *, id> *event = [self baseEvent];
     _onContentProcessDidTerminate(event);
   }
+
+  [webView reload];
 }
 
 /**
